@@ -64,7 +64,7 @@ function App() {
       const profileObj = credential ? parseJwt(credential) : null;
 
       if (profileObj) {
-        const response = await fetch("https://dashboard-mern-oils.onrender.com/api/v1/users", {
+        const response = await fetch("https://dashboard-mern-sgl8.onrender.com/api/v1/users", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -159,7 +159,7 @@ function App() {
           <RefineSnackbarProvider>
             <DevtoolsProvider>
               <Refine
-                dataProvider={dataProvider("https://dashboard-mern-oils.onrender.com/api/v1")}
+                dataProvider={dataProvider("https://dashboard-mern-sgl8.onrender.com/api/v1")}
                 notificationProvider={useNotificationProvider}
                 routerProvider={routerBindings}
                 authProvider={authProvider}
